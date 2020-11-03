@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102083060472",
+    "firebase_url": "https://pushnotificationusingonesignal.firebaseio.com",
+    "project_id": "pushnotificationusingonesignal",
+    "storage_bucket": "pushnotificationusingonesignal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102083060472:android:9a80583231ecf41230110d",
+        "android_client_info": {
+          "package_name": "com.rujirakongsomran.pushnotificationusingonesignal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102083060472-tjh1fl0vvhodsk9l3dsiabfeldtlnn4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rujirakongsomran.pushnotificationusingonesignal",
+            "certificate_hash": "ab7961a6bc2a018e99a8ce1b230074be85362154"
+          }
+        },
+        {
+          "client_id": "102083060472-4ser50bvgqldmjb2ju1s5bcb21llcu6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2cQuQSA1qZEWuEZ-SsZNYXFg-b8Nr-qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102083060472-4ser50bvgqldmjb2ju1s5bcb21llcu6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
