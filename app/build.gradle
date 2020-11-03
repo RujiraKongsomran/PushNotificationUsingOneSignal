@@ -1,6 +1,19 @@
-plugins {
-    id 'com.android.application'
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.9'
+    }
 }
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
 
 android {
     compileSdkVersion 30
@@ -26,6 +39,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    android {
+        defaultConfig {
+            manifestPlaceholders = [
+                    onesignal_app_id: 'f47d30f6-1be0-4b31-b8d9-b60c96779720',
+                    // Project number pulled from dashboard, local value is ignored.
+                    onesignal_google_project_number: 'REMOTE'
+            ]
+        }
+    }
 }
 
 dependencies {
@@ -36,6 +59,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.onesignal:OneSignal:3.15.4'
 }
 
 apply plugin: 'com.google.gms.google-services'
